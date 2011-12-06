@@ -15,7 +15,7 @@
 		android:id="@+id/textView1"
 		android:layout_width="wrap_content"
 		android:layout_height="fill_parent"
-		android:text="(facebook friend)"
+		android:text="0"
 		android:padding="10dp"
 		android:textSize="16sp" />
 

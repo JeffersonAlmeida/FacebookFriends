@@ -20,6 +20,7 @@ import android.widget.ListView;
 import com.facebook.android.*;
 import com.facebook.android.AsyncFacebookRunner.RequestListener;
 import com.facebook.android.Facebook.*;
+import com.facebook.cin.exercicio.ShowJason;
 
 public class Face extends ListActivity {
 
@@ -96,6 +97,11 @@ public class Face extends ListActivity {
 	                                               final String response) throws JSONException {
 	                                       JSONArray js;
 	                                       js = new JSONObject(response).getJSONArray("data");
+	                                       
+	                                       // Imprimir Objeto JSON
+	                                       
+	                                       ShowJason.getInstance().printjson(js);
+	                                       
 	                                       for (int i = 0; i < js.length(); i++) {
 	                                               a.add((String) js.getJSONObject(i).get("name"));
 	                                       }
